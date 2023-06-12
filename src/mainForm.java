@@ -61,7 +61,8 @@ public class mainForm extends JFrame {
         modificarModifButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                menu.modificar(textoModifNombre.getText(),Integer.parseInt(textoModifCalorias.getText()),Integer.parseInt(textoModifPreparacion.getText()),Double.parseDouble(textoModifPrecio.getText()));
+                textAModif.setText("Se modifico con exito.");
             }
         });
         ButtonBuscarEliminar.addActionListener(new ActionListener() {
@@ -84,7 +85,7 @@ public class mainForm extends JFrame {
         mostrarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                textAMostrar.setText(String.valueOf(menu.mostrarLista()));
             }
         });
 

@@ -51,4 +51,13 @@ public class Menu {
         plato.setMinutos(minutos);
         plato.setPrecio(precio);
     }
+
+    public List<Plato> mostrarLista (){
+        return lista;
+    }
+
+    @Override
+    public String toString() {
+        return "***MENU***" + lista;
+    }
 }
